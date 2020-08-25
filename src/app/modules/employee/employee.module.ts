@@ -5,14 +5,15 @@ import { NavComponent } from '../nav/nav.component';
 import { TableComponent } from '../table/table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterNamePipe } from '../../pipes/filter-name.pipe';
-import { FormsModule} from '@angular/forms'
-
+import { FormsModule} from '@angular/forms';
+import { SortPipe } from '../../pipes/sort.pipe';
 
 @NgModule({
   declarations: [EmployeeComponent,
     NavComponent,
     TableComponent,
-    FilterNamePipe
+    FilterNamePipe,
+    SortPipe
   ],
   imports: [
     CommonModule,

@@ -6,13 +6,13 @@
   <thead>
     <tr >
       <th *ngFor= "let col of displayedColumns ">
-      <a class="contribute cap text-primary"  href="#"><i class="fas fa-sort">
+      <a class="contribute cap text-primary" (click)= "sortedColumn=col ; a=a+1" href="#"><i class="fas fa-sort">
       <span class="sp"></span>
       {{ col }}</i></a>
       </th>
   </thead>
   <tbody>
-    <tr *ngFor= "let employee of employees | filterName : employeeName">
+    <tr *ngFor= "let employee of employees | filterName : employeeName | sort : sortedColumn : a">
     <ng-container> <td>{{employee.f_name}}</td></ng-container>
     <ng-container> <td>{{employee.l_name}}</td></ng-container>
     <ng-container> <td>{{employee.company}}</td></ng-container>
