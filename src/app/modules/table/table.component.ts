@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../../services/employee.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-table',
@@ -10,6 +9,7 @@ import { Observable } from 'rxjs';
 export class TableComponent implements OnInit {
 
   displayedColumns = ['f_name','l_name','company','city','state','zip','web','age'];
+  employeeName: string="";
   employees : any;
   constructor( private employee : EmployeeService ) { }
 

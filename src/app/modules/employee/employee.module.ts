@@ -4,15 +4,21 @@ import { EmployeeComponent } from './employee/employee.component';
 import { NavComponent } from '../nav/nav.component';
 import { TableComponent } from '../table/table.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterNamePipe } from '../../pipes/filter-name.pipe';
+import { FormsModule} from '@angular/forms'
+
 
 @NgModule({
   declarations: [EmployeeComponent,
     NavComponent,
-    TableComponent
+    TableComponent,
+    FilterNamePipe
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+
   ],
   exports:[
     EmployeeComponent,

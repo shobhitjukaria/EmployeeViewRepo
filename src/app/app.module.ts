@@ -9,9 +9,7 @@ import { EmployeeModule } from './modules/employee/employee.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-
-  ],
+    AppComponent,  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
