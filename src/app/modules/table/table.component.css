@@ -1,17 +1,14 @@
 .link{
   text-decoration: underline;
   cursor: pointer;
-}
-
-a.cap{
   text-transform : capitalize;
 }
 
-span.sp{
+span.space{
   padding-right : 2px;
 }
 
-div.gp{
+div.gap{
   margin-top :2px;
 }
 

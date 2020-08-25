@@ -5,9 +5,9 @@
 <table class="table table-hover table-striped table-light  form-group ">
   <thead>
     <tr >
-      <th *ngFor= "let col of displayedColumns ">
-      <a class="contribute cap text-primary" (click)= "sortedColumn=col ; a=a+1" href="#"><i class="fas fa-sort">
-      <span class="sp"></span>
+      <th *ngFor= "let col of displayedColumns">
+      <a class="contribute link text-primary" (click)= "sortedColumn=col ; a=a+1"><i class="fas fa-sort">
+      <span class="space"></span>
       {{ col }}</i></a>
       </th>
   </thead>
@@ -25,8 +25,9 @@
 </tbody>
 
 </table>
-<div class="gp">
+<ng-container class="container-fluid">
+<div class="gap">
   <pagination-controls  maxSize="11"  responsive="true" directionLinks="true"  autoHide="true" previousLabel="" nextLabel="" (pageChange)= "page = $event">/</pagination-controls>
   </div>
-
+</ng-container>
 <span class="ext"></span>
