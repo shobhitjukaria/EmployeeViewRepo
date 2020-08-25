@@ -13,6 +13,7 @@ export class TableComponent implements OnInit {
   employees : any;
   sortedColumn: string;
   a : number=0;
+  page : number=0;
   constructor( private employee : EmployeeService ) { }
 
   ngOnInit() {

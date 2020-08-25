@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilterNamePipe } from '../../pipes/filter-name.pipe';
 import { FormsModule} from '@angular/forms';
 import { SortPipe } from '../../pipes/sort.pipe';
+import { NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [EmployeeComponent,
@@ -18,7 +19,8 @@ import { SortPipe } from '../../pipes/sort.pipe';
   imports: [
     CommonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
 
   ],
   exports:[
