@@ -8,10 +8,14 @@ import { FilterNamePipe } from '../../pipes/filter-name.pipe';
 import { FormsModule} from '@angular/forms';
 import { SortPipe } from '../../pipes/sort.pipe';
 import { NgxPaginationModule} from 'ngx-pagination';
+import { AppRoutingModule } from '../../app-routing.module';
+
+
 
 @NgModule({
-  declarations: [EmployeeComponent,
+  declarations: [
     NavComponent,
+    EmployeeComponent,
     TableComponent,
     FilterNamePipe,
     SortPipe
@@ -20,7 +24,8 @@ import { NgxPaginationModule} from 'ngx-pagination';
     CommonModule,
     HttpClientModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AppRoutingModule
 
   ],
   exports:[
